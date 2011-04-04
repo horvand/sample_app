@@ -1,0 +1,809 @@
+Using /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180
+ruby@rorserver:~$ cd rails_projects/
+ruby@rorserver:~/rails_projects$ #rails new sample_app -T
+ruby@rorserver:~/rails_projects$ ls
+demo_app  first_app
+ruby@rorserver:~/rails_projects$ rails new sample_app -T
+      create  
+      create  README
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/mailers
+      create  app/models
+      create  app/views/layouts/application.html.erb
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/secret_token.rb
+      create  config/initializers/session_store.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  doc
+      create  doc/README_FOR_APP
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.gitkeep
+      create  log
+      create  log/server.log
+      create  log/production.log
+      create  log/development.log
+      create  log/test.log
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/index.html
+      create  public/robots.txt
+      create  public/images
+      create  public/images/rails.png
+      create  public/stylesheets
+      create  public/stylesheets/.gitkeep
+      create  public/javascripts
+      create  public/javascripts/application.js
+      create  public/javascripts/controls.js
+      create  public/javascripts/dragdrop.js
+      create  public/javascripts/effects.js
+      create  public/javascripts/prototype.js
+      create  public/javascripts/rails.js
+      create  script
+      create  script/rails
+      create  tmp
+      create  tmp/sessions
+      create  tmp/sockets
+      create  tmp/cache
+      create  tmp/pids
+      create  vendor/plugins
+      create  vendor/plugins/.gitkeep
+ruby@rorserver:~/rails_projects$ cd sample_app/
+ruby@rorserver:~/rails_projects/sample_app$ bundle install
+Fetching source index for http://rubygems.org/
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.5) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.5) 
+Using erubis (2.6.6) 
+Using rack (1.2.2) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.26) 
+Using actionpack (3.0.5) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.15) 
+Using actionmailer (3.0.5) 
+Using arel (2.0.9) 
+Using activerecord (3.0.5) 
+Using activeresource (3.0.5) 
+Using bundler (1.0.10) 
+Using diff-lcs (1.1.2) 
+Using nokogiri (1.4.4) 
+Using thor (0.14.6) 
+Using railties (3.0.5) 
+Using rails (3.0.5) 
+Using rspec-core (2.5.1) 
+Using rspec-expectations (2.5.0) 
+Using rspec-mocks (2.5.0) 
+Using rspec (2.5.0) 
+Using rspec-rails (2.5.0) 
+Using sqlite3-ruby (1.3.2) 
+Using webrat (0.7.1) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+ruby@rorserver:~/rails_projects/sample_app$ rails generate rspec:install
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+ruby@rorserver:~/rails_projects/sample_app$ git init
+Initialized empty Git repository in /usr/local/ruby/rails_projects/sample_app/.git/
+ruby@rorserver:~/rails_projects/sample_app$ git add .
+ruby@rorserver:~/rails_projects/sample_app$ git commit -m "initial commit"
+[master (root-commit) 5accde7] initial commit
+ 41 files changed, 10335 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 .rspec
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 Gemfile~
+ create mode 100644 README
+ create mode 100644 Rakefile
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/secret_token.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 doc/README_FOR_APP
+ create mode 100644 lib/tasks/.gitkeep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/images/rails.png
+ create mode 100644 public/index.html
+ create mode 100644 public/javascripts/application.js
+ create mode 100644 public/javascripts/controls.js
+ create mode 100644 public/javascripts/dragdrop.js
+ create mode 100644 public/javascripts/effects.js
+ create mode 100644 public/javascripts/prototype.js
+ create mode 100644 public/javascripts/rails.js
+ create mode 100644 public/robots.txt
+ create mode 100644 public/stylesheets/.gitkeep
+ create mode 100755 script/rails
+ create mode 100644 spec/spec_helper.rb
+ create mode 100644 vendor/plugins/.gitkeep
+ruby@rorserver:~/rails_projects/sample_app$ git remote add origin git@github.com:horvand/sample_app.git
+ruby@rorserver:~/rails_projects/sample_app$ git push origin master
+Counting objects: 63, done.
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (63/63), 86.40 KiB, done.
+Total 63 (delta 2), reused 0 (delta 0)
+To git@github.com:horvand/sample_app.git
+ * [new branch]      master -> master
+ruby@rorserver:~/rails_projects/sample_app$ heroku create
+Creating simple-night-897.... done
+http://simple-night-897.heroku.com/ | git@heroku.com:simple-night-897.git
+Git remote heroku added
+ruby@rorserver:~/rails_projects/sample_app$ git push heroku
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'git@heroku.com:simple-night-897.git'
+ruby@rorserver:~/rails_projects/sample_app$ git push heroku master
+Counting objects: 63, done.
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (63/63), 86.44 KiB, done.
+Total 63 (delta 2), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Configure Rails 3 to disable x-sendfile
+       Installing rails3_disable_x_sendfile... done
+-----> Configure Rails to log to stdout
+       Installing rails_log_stdout... done
+-----> Gemfile detected, running Bundler version 1.0.7
+       Unresolved dependencies detected; Installing...
+       Using --without development:test
+       Fetching source index for http://rubygems.org/
+       Installing rake (0.8.7) 
+       Installing abstract (1.0.0) 
+       Installing activesupport (3.0.5) 
+       Installing builder (2.1.2) 
+       Installing i18n (0.5.0) 
+       Installing activemodel (3.0.5) 
+       Installing erubis (2.6.6) 
+       Installing rack (1.2.2) 
+       Installing rack-mount (0.6.14) 
+       Installing rack-test (0.5.7) 
+       Installing tzinfo (0.3.26) 
+       Installing actionpack (3.0.5) 
+       Installing mime-types (1.16) 
+       Installing polyglot (0.3.1) 
+       Installing treetop (1.4.9) 
+       Installing mail (2.2.15) 
+       Installing actionmailer (3.0.5) 
+       Installing arel (2.0.9) 
+       Installing activerecord (3.0.5) 
+       Installing activeresource (3.0.5) 
+       Using bundler (1.0.7) 
+       Installing thor (0.14.6) 
+       Installing railties (3.0.5) 
+       Installing rails (3.0.5) 
+       Installing sqlite3-ruby (1.3.2) with native extensions 
+       Your bundle is complete! It was installed into ./.bundle/gems/
+       Compiled slug size is 3.8MB
+-----> Launching... done
+       http://simple-night-897.heroku.com deployed to Heroku
+
+To git@heroku.com:simple-night-897.git
+ * [new branch]      master -> master
+ruby@rorserver:~/rails_projects/sample_app$ rails g controller Pages home contact
+      create  app/controllers/pages_controller.rb
+       route  get "pages/contact"
+       route  get "pages/home"
+      invoke  erb
+      create    app/views/pages
+      create    app/views/pages/home.html.erb
+      create    app/views/pages/contact.html.erb
+      invoke  rspec
+      create    spec/controllers/pages_controller_spec.rb
+      create    spec/views/pages
+      create    spec/views/pages/home.html.erb_spec.rb
+      create    spec/views/pages/contact.html.erb_spec.rb
+      invoke  helper
+      create    app/helpers/pages_helper.rb
+      invoke    rspec
+      create      spec/helpers/pages_helper_spec.rb
+ruby@rorserver:~/rails_projects/sample_app$ git rm -r spec/views
+fatal: pathspec 'spec/views' did not match any files
+ruby@rorserver:~/rails_projects/sample_app$ git rm -r spec/helpers
+fatal: pathspec 'spec/helpers' did not match any files
+ruby@rorserver:~/rails_projects/sample_app$ rm -rf spec/views
+ruby@rorserver:~/rails_projects/sample_app$ rm -rf spec/helpers
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+..
+
+Finished in 0.11013 seconds
+2 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ autotest
+loading autotest/rails_rspec2
+<internal:lib/rubygems/custom_require>:29:in `require': no such file to load -- test/unit/ui/console/testrunner (LoadError)
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/redgreen-1.2.2/lib/redgreen.rb:2:in `<top (required)>'
+	from <internal:lib/rubygems/custom_require>:33:in `require'
+	from <internal:lib/rubygems/custom_require>:33:in `rescue in require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from /usr/local/ruby/.autotest:2:in `<top (required)>'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/lib/autotest.rb:311:in `load'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/lib/autotest.rb:311:in `block in initialize'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/lib/autotest.rb:310:in `each'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/lib/autotest.rb:310:in `initialize'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/autotest/rspec2.rb:11:in `initialize'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-rails-2.5.0/lib/autotest/rails_rspec2.rb:31:in `initialize'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/lib/autotest.rb:241:in `new'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/lib/autotest.rb:241:in `run'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/ZenTest-4.5.0/bin/autotest:6:in `<top (required)>'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/bin/autotest:19:in `load'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/bin/autotest:19:in `<main>'
+ruby@rorserver:~/rails_projects/sample_app$ autotest
+loading autotest/rails_rspec2
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -rrubygems -S /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/bin/rspec --tty '/usr/local/ruby/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb'
+..
+
+Finished in 0.11374 seconds
+2 examples, 0 failures
+
+# Waiting since 2011-04-04 09:54:57
+
+
+  C-c C-cInterrupt a second time to quit
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -rrubygems -S /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/bin/rspec --tty '/usr/local/ruby/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb'
+..
+
+Finished in 0.11001 seconds
+2 examples, 0 failures
+
+# Waiting since 2011-04-04 09:55:16
+
+  C-c C-cInterrupt a second time to quit
+  C-c C-cruby@rorserver:~/rails_projects/sample_app$ 
+ruby@rorserver:~/rails_projects/sample_app$ bundle install
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.5) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.5) 
+Using erubis (2.6.6) 
+Using rack (1.2.2) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.26) 
+Using actionpack (3.0.5) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.15) 
+Using actionmailer (3.0.5) 
+Using arel (2.0.9) 
+Using activerecord (3.0.5) 
+Using activeresource (3.0.5) 
+Using bundler (1.0.10) 
+Using diff-lcs (1.1.2) 
+Using nokogiri (1.4.4) 
+Using thor (0.14.6) 
+Using railties (3.0.5) 
+Using rails (3.0.5) 
+Using rspec-core (2.5.1) 
+Using rspec-expectations (2.5.0) 
+Using rspec-mocks (2.5.0) 
+Using rspec (2.5.0) 
+Using rspec-rails (2.5.0) 
+Using spork (0.8.4) 
+Using sqlite3-ruby (1.3.2) 
+Using webrat (0.7.1) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+ruby@rorserver:~/rails_projects/sample_app$ spork --bootstrap
+Using RSpec
+Bootstrapping /usr/local/ruby/rails_projects/sample_app/spec/spec_helper.rb.
+Done. Edit /usr/local/ruby/rails_projects/sample_app/spec/spec_helper.rb now with your favorite text editor and follow the instructions.time
+ruby@rorserver:~/rails_projects/sample_app$ time rspec spec
+..
+
+Finished in 0.14203 seconds
+2 examples, 0 failures
+
+real	0m4.350s
+user	0m3.560s
+sys	0m0.600s
+ruby@rorserver:~/rails_projects/sample_app$ time rspec --drb spec
+..
+
+Finished in 0.34848 seconds
+2 examples, 0 failures
+
+real	0m0.865s
+user	0m0.184s
+sys	0m0.116s
+ruby@rorserver:~/rails_projects/sample_app$ time rspec --drb spec
+Exception encountered: #<SyntaxError: /usr/local/ruby/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb:28: syntax error, unexpected keyword_end, expecting $end>
+backtrace:
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:235:in `load'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:235:in `block in load'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:227:in `load_dependency'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:235:in `load'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `block in load_spec_files'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `map'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load_spec_files'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/command_line.rb:18:in `run'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/monkey/spork/test_framework/rspec.rb:4:in `run_tests'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/run_strategy/forking.rb:13:in `block in run'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/forker.rb:21:in `block in initialize'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/forker.rb:18:in `fork'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/forker.rb:18:in `initialize'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/run_strategy/forking.rb:9:in `new'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/run_strategy/forking.rb:9:in `run'
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork/server.rb:47:in `run'
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/drb/drb.rb:1558:in `perform_without_block'
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/drb/drb.rb:1518:in `perform'
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/drb/drb.rb:1592:in `block (2 levels) in main_loop'
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/drb/drb.rb:1588:in `loop'
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/drb/drb.rb:1588:in `block in main_loop'
+
+real	0m0.405s
+user	0m0.212s
+sys	0m0.072s
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load': /usr/local/ruby/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb:28: syntax error, unexpected keyword_end, expecting $end (SyntaxError)
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `block in load_spec_files'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `map'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load_spec_files'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/command_line.rb:18:in `run'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:55:in `run_in_process'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:46:in `run'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:10:in `block in autorun'
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec
+..F
+
+Failures:
+
+  1) PagesController GET 'about' should be successful
+     Failure/Error: get 'about'
+     ActionController::RoutingError:
+       No route matches {:controller=>"pages", :action=>"about"}
+     # ./spec/controllers/pages_controller_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.1505 seconds
+3 examples, 1 failure
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+...
+
+Finished in 0.18906 seconds
+3 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+.F.F.F
+
+Failures:
+
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Pages#home</h1>
+       <p>Find me in app/views/pages/home.html.erb</p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'contact' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Contact</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Pages#contact</h1>
+       <p>Find me in app/views/pages/contact.html.erb</p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | About</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Pages#about</h1>
+       <p>Find me in app/views/pages/about.html.erb</p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:41:in `block (3 levels) in <top (required)>'
+
+Finished in 0.22824 seconds
+6 examples, 3 failures
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+.F.F.F
+
+Failures:
+
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'contact' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Contact</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | About</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:41:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20098 seconds
+6 examples, 3 failures
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+.F.F.F
+
+Failures:
+
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'contact' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Contact</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | About</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:41:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20451 seconds
+6 examples, 3 failures
+ruby@rorserver:~/rails_projects/sample_app$ rake
+(in /usr/local/ruby/rails_projects/sample_app)
+/usr/local/ruby/rails_projects/sample_app/db/schema.rb doesn't exist yet. Run "rake db:migrate" to create it then try again. If you do not intend to use a database, you should instead alter /usr/local/ruby/rails_projects/sample_app/config/application.rb to limit the frameworks that will be loaded
+ruby@rorserver:~/rails_projects/sample_app$ rake db:migrate
+(in /usr/local/ruby/rails_projects/sample_app)
+ruby@rorserver:~/rails_projects/sample_app$ rake
+(in /usr/local/ruby/rails_projects/sample_app)
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -S bundle exec rspec ./spec/controllers/pages_controller_spec.rb
+.F.F.F
+
+Failures:
+
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'contact' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Contact</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | About</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>SampleApp</title>
+       <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script><script src="/javascripts/effects.js?1301906040" type="text/javascript"></script><script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script><script src="/javascripts/controls.js?1301906040" type="text/javascript"></script><script src="/javascripts/rails.js?1301906040" type="text/javascript"></script><script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+     # ./spec/controllers/pages_controller_spec.rb:41:in `block (3 levels) in <top (required)>'
+
+Finished in 0.18312 seconds
+6 examples, 3 failures
+rake aborted!
+ruby -S bundle exec rspec ./spec/controllers/pages_controller_spec.rb failed
+
+(See full trace by running task with --trace)
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+......
+
+Finished in 0.21448 seconds
+6 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ git add .
+ruby@rorserver:~/rails_projects/sample_app$ git commit -m "chapter 3 ok"
+[master a4c6eab] chapter 3 ok
+ 19 files changed, 199 insertions(+), 27 deletions(-)
+ create mode 100644 app/controllers/pages_controller.rb
+ create mode 100644 app/controllers/pages_controller.rb~
+ create mode 100644 app/helpers/pages_helper.rb
+ create mode 100644 app/layouts/application.html.erb
+ create mode 100644 app/views/pages/about.html.erb
+ create mode 100644 app/views/pages/about.html.erb~
+ create mode 100644 app/views/pages/contact.html.erb
+ create mode 100644 app/views/pages/contact.html.erb~
+ create mode 100644 app/views/pages/home.html.erb
+ create mode 100644 app/views/pages/home.html.erb~
+ create mode 100644 db/schema.rb
+ create mode 100644 public/hello.html
+ create mode 100644 spec/controllers/pages_controller_spec.rb
+ create mode 100644 spec/controllers/pages_controller_spec.rb~
+ rewrite spec/spec_helper.rb (99%)
+ruby@rorserver:~/rails_projects/sample_app$ git push 
+Counting objects: 46, done.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (32/32), 3.89 KiB, done.
+Total 32 (delta 8), reused 0 (delta 0)
+To git@github.com:horvand/sample_app.git
+   5accde7..a4c6eab  master -> master
+ruby@rorserver:~/rails_projects/sample_app$ git push heroku
+Warning: Permanently added the RSA host key for IP address '50.16.233.102' to the list of known hosts.
+Counting objects: 46, done.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (32/32), 3.90 KiB, done.
+Total 32 (delta 8), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Configure Rails 3 to disable x-sendfile
+       Installing rails3_disable_x_sendfile... done
+-----> Configure Rails to log to stdout
+       Installing rails_log_stdout... done
+-----> Gemfile detected, running Bundler version 1.0.7
+       Unresolved dependencies detected; Installing...
+       Using --without development:test
+       Fetching source index for http://rubygems.org/
+       Installing rake (0.8.7) 
+       Installing abstract (1.0.0) 
+       Installing activesupport (3.0.5) 
+       Installing builder (2.1.2) 
+       Installing i18n (0.5.0) 
+       Installing activemodel (3.0.5) 
+       Installing erubis (2.6.6) 
+       Installing rack (1.2.2) 
+       Installing rack-mount (0.6.14) 
+       Installing rack-test (0.5.7) 
+       Installing tzinfo (0.3.26) 
+       Installing actionpack (3.0.5) 
+       Installing mime-types (1.16) 
+       Installing polyglot (0.3.1) 
+       Installing treetop (1.4.9) 
+       Installing mail (2.2.15) 
+       Installing actionmailer (3.0.5) 
+       Installing arel (2.0.9) 
+       Installing activerecord (3.0.5) 
+       Installing activeresource (3.0.5) 
+       Using bundler (1.0.7) 
+       Installing thor (0.14.6) 
+       Installing railties (3.0.5) 
+       Installing rails (3.0.5) 
+       Installing sqlite3-ruby (1.3.2) with native extensions 
+       Your bundle is complete! It was installed into ./.bundle/gems/
+       Compiled slug size is 3.8MB
+-----> Launching... done
+       http://simple-night-897.heroku.com deployed to Heroku
+
+To git@heroku.com:simple-night-897.git
+   5accde7..a4c6eab  master -> master
+ruby@rorserver:~/rails_projects/sample_app$ 
