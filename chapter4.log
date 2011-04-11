@@ -1,0 +1,409 @@
+Using /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180
+ruby@rorserver:~/rails_projects/sample_app/app/layouts$ cd
+ruby@rorserver:~$ cd Downloads/
+ruby@rorserver:~/Downloads$ ls
+autotest_images.zip  joshuaclayton-blueprint-css-v1.0-5-gc20e981.zip
+home                 tavaszi_félév_tudnivalói.pdf
+ruby@rorserver:~/Downloads$ unzip joshuaclayton-blueprint-css-v1.0-5-gc20e981.zip 
+Archive:  joshuaclayton-blueprint-css-v1.0-5-gc20e981.zip
+c20e98112385f25a01185c9eb804bec61e74677c
+   creating: joshuaclayton-blueprint-css-c20e981/
+ extracting: joshuaclayton-blueprint-css-c20e981/.gitignore  
+  inflating: joshuaclayton-blueprint-css-c20e981/AUTHORS.textile  
+  inflating: joshuaclayton-blueprint-css-c20e981/CHANGELOG  
+  inflating: joshuaclayton-blueprint-css-c20e981/LICENSE  
+  inflating: joshuaclayton-blueprint-css-c20e981/README.textile  
+  inflating: joshuaclayton-blueprint-css-c20e981/TUTORIAL.textile  
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/ie.css  
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/icons/
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/icons/cross.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/icons/key.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/icons/tick.png  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/readme.txt  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/buttons/screen.css  
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/fancy-type/
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/fancy-type/readme.txt  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/fancy-type/screen.css  
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/doc.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/email.png  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/external.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/feed.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/im.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/pdf.png  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/visited.png  
+ extracting: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/icons/xls.png  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/readme.txt  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/link-icons/screen.css  
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/rtl/
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/rtl/readme.txt  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/plugins/rtl/screen.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/print.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/screen.css  
+   creating: joshuaclayton-blueprint-css-c20e981/blueprint/src/
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/forms.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/grid.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/grid.png  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/ie.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/print.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/reset.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/blueprint/src/typography.css  
+   creating: joshuaclayton-blueprint-css-c20e981/debug/
+  inflating: joshuaclayton-blueprint-css-c20e981/debug/README.textile  
+  inflating: joshuaclayton-blueprint-css-c20e981/debug/debug.css  
+  inflating: joshuaclayton-blueprint-css-c20e981/debug/debug.html  
+   creating: joshuaclayton-blueprint-css-c20e981/lib/
+   creating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/blueprint.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/compressor.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/core_ext.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/css_parser.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/custom_layout.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/grid.css.erb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/grid_builder.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/namespace.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/semantic_class_names.rb  
+   creating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/COPYRIGHT.html  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/JIGSAW_COPYRIGHT  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/README.html  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/XERCES_COPYING.txt  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/css-validator-javadoc.jar  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/css-validator.jar  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/jigsaw.jar  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validate/xerces.jar  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/blueprint/validator.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/compress.rb  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/settings.example.yml  
+  inflating: joshuaclayton-blueprint-css-c20e981/lib/validate.rb  
+   creating: joshuaclayton-blueprint-css-c20e981/templates/
+   creating: joshuaclayton-blueprint-css-c20e981/templates/psd/
+  inflating: joshuaclayton-blueprint-css-c20e981/templates/psd/fixed-width.psd  
+   creating: joshuaclayton-blueprint-css-c20e981/tests/
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/index.html  
+   creating: joshuaclayton-blueprint-css-c20e981/tests/parts/
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/elements.html  
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/forms.html  
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/grid.html  
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/sample.html  
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/test-small.jpg  
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/test.jpg  
+  inflating: joshuaclayton-blueprint-css-c20e981/tests/parts/valid.png  
+ruby@rorserver:~/Downloads$ ls
+autotest_images.zip
+home
+joshuaclayton-blueprint-css-c20e981
+joshuaclayton-blueprint-css-v1.0-5-gc20e981.zip
+tavaszi_félév_tudnivalói.pdf
+ruby@rorserver:~/Downloads$ cd joshuaclayton-blueprint-css-
+bash: cd: joshuaclayton-blueprint-css-: No such file or directory
+ruby@rorserver:~/Downloads$ cd joshuaclayton-blueprint-css-c20e981/
+ruby@rorserver:~/Downloads/joshuaclayton-blueprint-css-c20e981$ ls
+AUTHORS.textile  CHANGELOG  lib      README.textile  tests
+blueprint        debug      LICENSE  templates       TUTORIAL.textile
+ruby@rorserver:~/Downloads/joshuaclayton-blueprint-css-c20e981$ cp -r blueprint ~/rails_projects/sample_app/public/stylesheets/
+ruby@rorserver:~/Downloads/joshuaclayton-blueprint-css-c20e981$ cd ~/rails_projects/sample_app/
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec
+.F...F
+
+Failures:
+
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>Home</title>
+       <link href="/stylesheets/blueprint/screen.css?1301909884" media="screen" rel="stylesheet" type="text/css">
+       <link href="/stylesheets/blueprint/print.css?1301909884" media="print" rel="stylesheet" type="text/css">
+       </head>
+       <body>
+           <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+         </body>
+       </html><!-- <!DOCTYPE html>
+       <html>
+       <head>
+         <title>SampleApp</title>
+         
+         <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/effects.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/controls.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/rails.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+         
+       </head>
+       <body>
+       
+       <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+       
+       </body>
+       </html>
+       -->
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | About</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>About</title>
+       <link href="/stylesheets/blueprint/screen.css?1301909884" media="screen" rel="stylesheet" type="text/css">
+       <link href="/stylesheets/blueprint/print.css?1301909884" media="print" rel="stylesheet" type="text/css">
+       </head>
+       <body>
+           <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+         </body>
+       </html><!-- <!DOCTYPE html>
+       <html>
+       <head>
+         <title>SampleApp</title>
+         
+         <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/effects.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/controls.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/rails.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+         
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+       -->
+     # ./spec/controllers/pages_controller_spec.rb:41:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20467 seconds
+6 examples, 2 failures
+ruby@rorserver:~/rails_projects/sample_app$ rake
+(in /usr/local/ruby/rails_projects/sample_app)
+/usr/local/ruby/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -S bundle exec rspec ./spec/controllers/pages_controller_spec.rb
+.F...F
+
+Failures:
+
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>Home</title>
+       <link href="/stylesheets/blueprint/screen.css?1301909884" media="screen" rel="stylesheet" type="text/css">
+       <link href="/stylesheets/blueprint/print.css?1301909884" media="print" rel="stylesheet" type="text/css">
+       </head>
+       <body>
+           <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+         </body>
+       </html><!-- <!DOCTYPE html>
+       <html>
+       <head>
+         <title>SampleApp</title>
+         
+         <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/effects.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/controls.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/rails.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+         
+       </head>
+       <body>
+       
+       <h1>Sample App</h1>
+       <p>
+         This is the home page for the
+         <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+         sample application.
+       </p>
+       
+       
+       </body>
+       </html>
+       -->
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+       expected following output to contain a <title>Ruby on Rails Tutorial Sample App | About</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>About</title>
+       <link href="/stylesheets/blueprint/screen.css?1301909884" media="screen" rel="stylesheet" type="text/css">
+       <link href="/stylesheets/blueprint/print.css?1301909884" media="print" rel="stylesheet" type="text/css">
+       </head>
+       <body>
+           <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+         </body>
+       </html><!-- <!DOCTYPE html>
+       <html>
+       <head>
+         <title>SampleApp</title>
+         
+         <script src="/javascripts/prototype.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/effects.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/dragdrop.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/controls.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/rails.js?1301906040" type="text/javascript"></script>
+       <script src="/javascripts/application.js?1301906040" type="text/javascript"></script>
+         
+       </head>
+       <body>
+       
+       <h1>Contact</h1>
+       <p>
+         Contact Ruby on Rails Tutorial about the sample app at the
+         <a href="http://railstutorial.org/feedback">feedback page</a>.
+       </p>
+       
+       
+       </body>
+       </html>
+       -->
+     # ./spec/controllers/pages_controller_spec.rb:41:in `block (3 levels) in <top (required)>'
+
+Finished in 0.2302 seconds
+6 examples, 2 failures
+rake aborted!
+ruby -S bundle exec rspec ./spec/controllers/pages_controller_spec.rb failed
+
+(See full trace by running task with --trace)
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec
+......
+
+Finished in 0.19866 seconds
+6 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ rails c
+Loading development environment (Rails 3.0.5)
+ruby-1.9.2-p180 :001 > stylesheet_link_tag "blueprint/screen"
+NoMethodError: undefined method `stylesheet_link_tag' for main:Object
+	from (irb):1
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/commands/console.rb:44:in `start'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :002 > stylesheet_link_tag "blueprint/screen", {}
+NoMethodError: undefined method `stylesheet_link_tag' for main:Object
+	from (irb):2
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/commands/console.rb:44:in `start'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :003 > exit
+ruby@rorserver:~/rails_projects/sample_a
+ruby@rorserver:~/rails_projects/sample_app$ git add .
+ruby@rorserver:~/rails_projects/sample_app$ git commit m "ch. 4 done"
+error: pathspec 'm' did not match any file(s) known to git.
+error: pathspec 'ch. 4 done' did not match any file(s) known to git.
+ruby@rorserver:~/rails_projects/sample_app$ git commit -m "ch. 4 done"
+[master 7a11ae2] ch. 4 done
+ 32 files changed, 2266 insertions(+), 1 deletions(-)
+ create mode 100644 chapter3.log
+ create mode 100644 public/stylesheets/blueprint/ie.css
+ create mode 100755 public/stylesheets/blueprint/plugins/buttons/icons/cross.png
+ create mode 100755 public/stylesheets/blueprint/plugins/buttons/icons/key.png
+ create mode 100755 public/stylesheets/blueprint/plugins/buttons/icons/tick.png
+ create mode 100644 public/stylesheets/blueprint/plugins/buttons/readme.txt
+ create mode 100644 public/stylesheets/blueprint/plugins/buttons/screen.css
+ create mode 100644 public/stylesheets/blueprint/plugins/fancy-type/readme.txt
+ create mode 100644 public/stylesheets/blueprint/plugins/fancy-type/screen.css
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/doc.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/email.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/external.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/feed.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/im.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/pdf.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/visited.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/icons/xls.png
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/readme.txt
+ create mode 100644 public/stylesheets/blueprint/plugins/link-icons/screen.css
+ create mode 100644 public/stylesheets/blueprint/plugins/rtl/readme.txt
+ create mode 100644 public/stylesheets/blueprint/plugins/rtl/screen.css
+ create mode 100644 public/stylesheets/blueprint/print.css
+ create mode 100644 public/stylesheets/blueprint/screen.css
+ create mode 100644 public/stylesheets/blueprint/src/forms.css
+ create mode 100755 public/stylesheets/blueprint/src/grid.css
+ create mode 100644 public/stylesheets/blueprint/src/grid.png
+ create mode 100644 public/stylesheets/blueprint/src/ie.css
+ create mode 100755 public/stylesheets/blueprint/src/print.css
+ create mode 100755 public/stylesheets/blueprint/src/reset.css
+ create mode 100644 public/stylesheets/blueprint/src/typography.css
+ruby@rorserver:~/rails_projects/sample_app$ git push
+Counting objects: 58, done.
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (49/49), 75.01 KiB, done.
+Total 49 (delta 4), reused 0 (delta 0)
+To git@github.com:horvand/sample_app.git
+   a4c6eab..7a11ae2  master -> master
+ruby@rorserver:~/rails_projects/sample_app$ git push heroku
+Counting objects: 58, done.
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (49/49), 75.03 KiB, done.
+Total 49 (delta 4), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Configure Rails 3 to disable x-sendfile
+       Installing rails3_disable_x_sendfile... done
+-----> Configure Rails to log to stdout
+       Installing rails_log_stdout... done
+-----> Gemfile detected, running Bundler version 1.0.7
+       All dependencies are satisfied
+       Compiled slug size is 3.9MB
+-----> Launching... done
+       http://simple-night-897.heroku.com deployed to Heroku
+
+To git@heroku.com:simple-night-897.git
+   a4c6eab..7a11ae2  master -> master
+ruby@rorserver:~/rails_projects/sample_app$ 
