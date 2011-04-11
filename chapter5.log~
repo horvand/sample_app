@@ -1,0 +1,866 @@
+Using /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180
+ruby@rorserver:~/rails_projects/sample_app/app/views/layouts$ cd ../..
+ruby@rorserver:~/rails_projects/sample_app/app$ cd ..
+ruby@rorserver:~/rails_projects/sample_app$ rails generate integration_test layout_links
+      invoke  rspec
+      create    spec/requests/layout_links_spec.rb
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+FFFFFFF
+
+Failures:
+
+  1) PagesController GET 'home' should be successful
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000003c08b10>:0x00000003c05550>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___1749147718075071501_31355460__3804517151358960878'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__142655858601788976_31476020_4372246028875061401'
+     # ./spec/controllers/pages_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'home' should have the right title
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000003c08b10>:0x00000003ad83a8>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___1749147718075071501_31355460__3804517151358960878'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__142655858601788976_31476020_4372246028875061401'
+     # ./spec/controllers/pages_controller_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'contact' should be successful
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000003c08b10>:0x0000000394f680>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___1749147718075071501_31355460__3804517151358960878'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__142655858601788976_31476020_4372246028875061401'
+     # ./spec/controllers/pages_controller_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  4) PagesController GET 'contact' should have the right title
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000003c08b10>:0x000000037c32f8>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___1749147718075071501_31355460__3804517151358960878'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__142655858601788976_31476020_4372246028875061401'
+     # ./spec/controllers/pages_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+  5) PagesController GET 'about' should be successful
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000003c08b10>:0x000000036b7eb8>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___1749147718075071501_31355460__3804517151358960878'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__142655858601788976_31476020_4372246028875061401'
+     # ./spec/controllers/pages_controller_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  6) PagesController GET 'about' should have the right title
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000003c08b10>:0x00000002bb7360>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___1749147718075071501_31355460__3804517151358960878'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__142655858601788976_31476020_4372246028875061401'
+     # ./spec/controllers/pages_controller_spec.rb:40:in `block (3 levels) in <top (required)>'
+
+  7) LayoutLinks GET /layout_links works! (now write some real specs)
+     Failure/Error: get layout_links_index_path
+     NameError:
+       undefined local variable or method `layout_links_index_path' for #<RSpec::Core::ExampleGroup::Nested_2::Nested_1:0x00000002846708>
+     # ./spec/requests/layout_links_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+Finished in 1.3 seconds
+7 examples, 7 failures
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+FFFFFFFFFF
+
+Failures:
+
+  1) PagesController GET 'home' should be successful
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000002593470>:0x00000002590108>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___2839222821141950599_19580040_4169709925022509620'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__414143642035944989_19701720__3410302001252758936'
+     # ./spec/controllers/pages_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'home' should have the right title
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000002593470>:0x00000002458fb0>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___2839222821141950599_19580040_4169709925022509620'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__414143642035944989_19701720__3410302001252758936'
+     # ./spec/controllers/pages_controller_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'contact' should be successful
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000002593470>:0x000000022c69b8>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___2839222821141950599_19580040_4169709925022509620'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__414143642035944989_19701720__3410302001252758936'
+     # ./spec/controllers/pages_controller_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  4) PagesController GET 'contact' should have the right title
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000002593470>:0x0000000213a180>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___2839222821141950599_19580040_4169709925022509620'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__414143642035944989_19701720__3410302001252758936'
+     # ./spec/controllers/pages_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+  5) PagesController GET 'about' should be successful
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000002593470>:0x000000020289b8>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___2839222821141950599_19580040_4169709925022509620'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__414143642035944989_19701720__3410302001252758936'
+     # ./spec/controllers/pages_controller_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  6) PagesController GET 'about' should have the right title
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `about_path' for #<#<Class:0x00000002593470>:0x000000015281d0>
+     # ./app/views/layouts/_header.html.erb:5:in `_app_views_layouts__header_html_erb___2839222821141950599_19580040_4169709925022509620'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__414143642035944989_19701720__3410302001252758936'
+     # ./spec/controllers/pages_controller_spec.rb:40:in `block (3 levels) in <top (required)>'
+
+  7) LayoutLinks should have a Home page at '/'
+     Failure/Error: response.should have_selector('title', :content => "Home")
+       expected following output to contain a <title>Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>Ruby on Rails: Welcome aboard</title>
+       <style type="text/css" media="screen">
+             body {
+               margin: 0;
+               margin-bottom: 25px;
+               padding: 0;
+               background-color: #f0f0f0;
+               font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+               font-size: 13px;
+               color: #333;
+             }
+       
+             h1 {
+               font-size: 28px;
+               color: #000;
+             }
+       
+             a  {color: #03c}
+             a:hover {
+               background-color: #03c;
+               color: white;
+               text-decoration: none;
+             }
+       
+       
+             #page {
+               background-color: #f0f0f0;
+               width: 750px;
+               margin: 0;
+               margin-left: auto;
+               margin-right: auto;
+             }
+       
+             #content {
+               float: left;
+               background-color: white;
+               border: 3px solid #aaa;
+               border-top: none;
+               padding: 25px;
+               width: 500px;
+             }
+       
+             #sidebar {
+               float: right;
+               width: 175px;
+             }
+       
+             #footer {
+               clear: both;
+             }
+       
+       
+             #header, #about, #getting-started {
+               padding-left: 75px;
+               padding-right: 30px;
+             }
+       
+       
+             #header {
+               background-image: url("images/rails.png");
+               background-repeat: no-repeat;
+               background-position: top left;
+               height: 64px;
+             }
+             #header h1, #header h2 {margin: 0}
+             #header h2 {
+               color: #888;
+               font-weight: normal;
+               font-size: 16px;
+             }
+       
+       
+             #about h3 {
+               margin: 0;
+               margin-bottom: 10px;
+               font-size: 14px;
+             }
+       
+             #about-content {
+               background-color: #ffd;
+               border: 1px solid #fc0;
+               margin-left: -55px;
+               margin-right: -10px;
+             }
+             #about-content table {
+               margin-top: 10px;
+               margin-bottom: 10px;
+               font-size: 11px;
+               border-collapse: collapse;
+             }
+             #about-content td {
+               padding: 10px;
+               padding-top: 3px;
+               padding-bottom: 3px;
+             }
+             #about-content td.name  {color: #555}
+             #about-content td.value {color: #000}
+       
+             #about-content ul {
+               padding: 0;
+               list-style-type: none;
+             }
+       
+             #about-content.failure {
+               background-color: #fcc;
+               border: 1px solid #f00;
+             }
+             #about-content.failure p {
+               margin: 0;
+               padding: 10px;
+             }
+       
+       
+             #getting-started {
+               border-top: 1px solid #ccc;
+               margin-top: 25px;
+               padding-top: 15px;
+             }
+             #getting-started h1 {
+               margin: 0;
+               font-size: 20px;
+             }
+             #getting-started h2 {
+               margin: 0;
+               font-size: 14px;
+               font-weight: normal;
+               color: #333;
+               margin-bottom: 25px;
+             }
+             #getting-started ol {
+               margin-left: 0;
+               padding-left: 0;
+             }
+             #getting-started li {
+               font-size: 18px;
+               color: #888;
+               margin-bottom: 25px;
+             }
+             #getting-started li h2 {
+               margin: 0;
+               font-weight: normal;
+               font-size: 18px;
+               color: #333;
+             }
+             #getting-started li p {
+               color: #555;
+               font-size: 13px;
+             }
+       
+       
+             #sidebar ul {
+               margin-left: 0;
+               padding-left: 0;
+             }
+             #sidebar ul h3 {
+               margin-top: 25px;
+               font-size: 16px;
+               padding-bottom: 10px;
+               border-bottom: 1px solid #ccc;
+             }
+             #sidebar li {
+               list-style-type: none;
+             }
+             #sidebar ul.links li {
+               margin-bottom: 5px;
+             }
+       
+           </style>
+       <script type="text/javascript">
+             function about() {
+               info = document.getElementById('about-content');
+               if (window.XMLHttpRequest)
+                 { xhr = new XMLHttpRequest(); }
+               else
+                 { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
+               xhr.open("GET","rails/info/properties",false);
+               xhr.send("");
+               info.innerHTML = xhr.responseText;
+               info.style.display = 'block'
+             }
+           </script>
+       </head>
+       <body>
+           <div id="page">
+             <div id="sidebar">
+               <ul id="sidebar-items">
+       <li>
+                   <h3>Browse the documentation</h3>
+                   <ul class="links">
+       <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
+                     <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
+                     <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
+                     <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+                   </ul>
+       </li>
+               </ul>
+       </div>
+       
+             <div id="content">
+               <div id="header">
+                 <h1>Welcome aboard</h1>
+                 <h2>You&#8217;re riding Ruby on Rails!</h2>
+               </div>
+       
+               <div id="about">
+                 <h3><a href="rails/info/properties" onclick="about(); return false">About your application&#8217;s environment</a></h3>
+                 <div id="about-content" style="display: none"></div>
+               </div>
+       
+               <div id="getting-started">
+                 <h1>Getting started</h1>
+                 <h2>Here&#8217;s how to get rolling:</h2>
+       
+                 <ol>
+       <li>
+                     <h2>Use <code>rails generate</code> to create your models and controllers</h2>
+                     <p>To see all available options, run it without parameters.</p>
+                   </li>
+       
+                   <li>
+                     <h2>Set up a default route and remove or rename this file</h2>
+                     <p>Routes are set up in config/routes.rb.</p>
+                   </li>
+       
+                   <li>
+                     <h2>Create your database</h2>
+                     <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
+                   </li>
+                 </ol>
+       </div>
+             </div>
+       
+             <div id="footer">&#160;</div>
+           </div>
+         </body>
+       </html>
+     # ./spec/requests/layout_links_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+  8) LayoutLinks should have a Contact page at '/contact'
+     Failure/Error: response.should have_selector('title', :content => "Contact")
+       expected following output to contain a <title>Contact</title> tag:
+       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+       <html><body><p>Not Found</p></body></html>
+     # ./spec/requests/layout_links_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+  9) LayoutLinks should have an About page at '/about'
+     Failure/Error: response.should have_selector('title', :content => "About")
+       expected following output to contain a <title>About</title> tag:
+       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+       <html><body><p>Not Found</p></body></html>
+     # ./spec/requests/layout_links_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  10) LayoutLinks should have a Help page at '/help'
+     Failure/Error: response.should have_selector('title', :content => "Help")
+       expected following output to contain a <title>Help</title> tag:
+       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+       <html><body><p>Not Found</p></body></html>
+     # ./spec/requests/layout_links_spec.rb:22:in `block (2 levels) in <top (required)>'
+
+Finished in 0.42673 seconds
+10 examples, 10 failures
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+FFFFFFFFFF
+
+Failures:
+
+  1) PagesController GET 'home' should be successful
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x000000024806a0>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # ./spec/controllers/pages_controller_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'home' should have the right title
+     Failure/Error: get 'home'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x00000001a79030>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # ./spec/controllers/pages_controller_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'contact' should be successful
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x0000000174b200>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # ./spec/controllers/pages_controller_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  4) PagesController GET 'contact' should have the right title
+     Failure/Error: get 'contact'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x00000000f458a8>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # ./spec/controllers/pages_controller_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+  5) PagesController GET 'about' should be successful
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x00000003865b98>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # ./spec/controllers/pages_controller_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  6) PagesController GET 'about' should have the right title
+     Failure/Error: get 'about'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x000000038f8128>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # ./spec/controllers/pages_controller_spec.rb:40:in `block (3 levels) in <top (required)>'
+
+  7) LayoutLinks should have a Home page at '/'
+     Failure/Error: response.should have_selector('title', :content => "Home")
+       expected following output to contain a <title>Home</title> tag:
+       <!DOCTYPE html>
+       <html>
+       <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+       <title>Ruby on Rails: Welcome aboard</title>
+       <style type="text/css" media="screen">
+             body {
+               margin: 0;
+               margin-bottom: 25px;
+               padding: 0;
+               background-color: #f0f0f0;
+               font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+               font-size: 13px;
+               color: #333;
+             }
+       
+             h1 {
+               font-size: 28px;
+               color: #000;
+             }
+       
+             a  {color: #03c}
+             a:hover {
+               background-color: #03c;
+               color: white;
+               text-decoration: none;
+             }
+       
+       
+             #page {
+               background-color: #f0f0f0;
+               width: 750px;
+               margin: 0;
+               margin-left: auto;
+               margin-right: auto;
+             }
+       
+             #content {
+               float: left;
+               background-color: white;
+               border: 3px solid #aaa;
+               border-top: none;
+               padding: 25px;
+               width: 500px;
+             }
+       
+             #sidebar {
+               float: right;
+               width: 175px;
+             }
+       
+             #footer {
+               clear: both;
+             }
+       
+       
+             #header, #about, #getting-started {
+               padding-left: 75px;
+               padding-right: 30px;
+             }
+       
+       
+             #header {
+               background-image: url("images/rails.png");
+               background-repeat: no-repeat;
+               background-position: top left;
+               height: 64px;
+             }
+             #header h1, #header h2 {margin: 0}
+             #header h2 {
+               color: #888;
+               font-weight: normal;
+               font-size: 16px;
+             }
+       
+       
+             #about h3 {
+               margin: 0;
+               margin-bottom: 10px;
+               font-size: 14px;
+             }
+       
+             #about-content {
+               background-color: #ffd;
+               border: 1px solid #fc0;
+               margin-left: -55px;
+               margin-right: -10px;
+             }
+             #about-content table {
+               margin-top: 10px;
+               margin-bottom: 10px;
+               font-size: 11px;
+               border-collapse: collapse;
+             }
+             #about-content td {
+               padding: 10px;
+               padding-top: 3px;
+               padding-bottom: 3px;
+             }
+             #about-content td.name  {color: #555}
+             #about-content td.value {color: #000}
+       
+             #about-content ul {
+               padding: 0;
+               list-style-type: none;
+             }
+       
+             #about-content.failure {
+               background-color: #fcc;
+               border: 1px solid #f00;
+             }
+             #about-content.failure p {
+               margin: 0;
+               padding: 10px;
+             }
+       
+       
+             #getting-started {
+               border-top: 1px solid #ccc;
+               margin-top: 25px;
+               padding-top: 15px;
+             }
+             #getting-started h1 {
+               margin: 0;
+               font-size: 20px;
+             }
+             #getting-started h2 {
+               margin: 0;
+               font-size: 14px;
+               font-weight: normal;
+               color: #333;
+               margin-bottom: 25px;
+             }
+             #getting-started ol {
+               margin-left: 0;
+               padding-left: 0;
+             }
+             #getting-started li {
+               font-size: 18px;
+               color: #888;
+               margin-bottom: 25px;
+             }
+             #getting-started li h2 {
+               margin: 0;
+               font-weight: normal;
+               font-size: 18px;
+               color: #333;
+             }
+             #getting-started li p {
+               color: #555;
+               font-size: 13px;
+             }
+       
+       
+             #sidebar ul {
+               margin-left: 0;
+               padding-left: 0;
+             }
+             #sidebar ul h3 {
+               margin-top: 25px;
+               font-size: 16px;
+               padding-bottom: 10px;
+               border-bottom: 1px solid #ccc;
+             }
+             #sidebar li {
+               list-style-type: none;
+             }
+             #sidebar ul.links li {
+               margin-bottom: 5px;
+             }
+       
+           </style>
+       <script type="text/javascript">
+             function about() {
+               info = document.getElementById('about-content');
+               if (window.XMLHttpRequest)
+                 { xhr = new XMLHttpRequest(); }
+               else
+                 { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
+               xhr.open("GET","rails/info/properties",false);
+               xhr.send("");
+               info.innerHTML = xhr.responseText;
+               info.style.display = 'block'
+             }
+           </script>
+       </head>
+       <body>
+           <div id="page">
+             <div id="sidebar">
+               <ul id="sidebar-items">
+       <li>
+                   <h3>Browse the documentation</h3>
+                   <ul class="links">
+       <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
+                     <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
+                     <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
+                     <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+                   </ul>
+       </li>
+               </ul>
+       </div>
+       
+             <div id="content">
+               <div id="header">
+                 <h1>Welcome aboard</h1>
+                 <h2>You&#8217;re riding Ruby on Rails!</h2>
+               </div>
+       
+               <div id="about">
+                 <h3><a href="rails/info/properties" onclick="about(); return false">About your application&#8217;s environment</a></h3>
+                 <div id="about-content" style="display: none"></div>
+               </div>
+       
+               <div id="getting-started">
+                 <h1>Getting started</h1>
+                 <h2>Here&#8217;s how to get rolling:</h2>
+       
+                 <ol>
+       <li>
+                     <h2>Use <code>rails generate</code> to create your models and controllers</h2>
+                     <p>To see all available options, run it without parameters.</p>
+                   </li>
+       
+                   <li>
+                     <h2>Set up a default route and remove or rename this file</h2>
+                     <p>Routes are set up in config/routes.rb.</p>
+                   </li>
+       
+                   <li>
+                     <h2>Create your database</h2>
+                     <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
+                   </li>
+                 </ol>
+       </div>
+             </div>
+       
+             <div id="footer">&#160;</div>
+           </div>
+         </body>
+       </html>
+     # ./spec/requests/layout_links_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+  8) LayoutLinks should have a Contact page at '/contact'
+     Failure/Error: get '/contact'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x0000000399b5f8>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # <internal:prelude>:10:in `synchronize'
+     # ./spec/requests/layout_links_spec.rb:11:in `block (2 levels) in <top (required)>'
+
+  9) LayoutLinks should have an About page at '/about'
+     Failure/Error: get '/about'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x00000003a3a3b0>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # <internal:prelude>:10:in `synchronize'
+     # ./spec/requests/layout_links_spec.rb:16:in `block (2 levels) in <top (required)>'
+
+  10) LayoutLinks should have a Help page at '/help'
+     Failure/Error: get '/help'
+     ActionView::Template::Error:
+       undefined local variable or method `signin_path' for #<#<Class:0x000000024935c0>:0x00000003ad9870>
+     # ./app/views/layouts/_header.html.erb:7:in `_app_views_layouts__header_html_erb__1592282526240170421_18732000_523659335145025597'
+     # ./app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___741797227571552995_19196300__1235884797846466176'
+     # <internal:prelude>:10:in `synchronize'
+     # ./spec/requests/layout_links_spec.rb:21:in `block (2 levels) in <top (required)>'
+
+Finished in 0.43947 seconds
+10 examples, 10 failures
+ruby@rorserver:~/rails_projects/sample_app$ git rm public/index.html 
+rm 'public/index.html'
+ruby@rorserver:~/rails_projects/sample_app$ git commit -m 'index.html rm-d'
+[master e7ac894] index.html rm-d
+ 1 files changed, 0 insertions(+), 239 deletions(-)
+ delete mode 100644 public/index.html
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+..........
+
+Finished in 0.23774 seconds
+10 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ generate controller Users new
+bash: generate: command not found
+ruby@rorserver:~/rails_projects/sample_app$ rails generate controller Users new
+      create  app/controllers/users_controller.rb
+       route  get "users/new"
+      invoke  erb
+      create    app/views/users
+      create    app/views/users/new.html.erb
+      invoke  rspec
+      create    spec/controllers/users_controller_spec.rb
+      create    spec/views/users
+      create    spec/views/users/new.html.erb_spec.rb
+      invoke  helper
+      create    app/helpers/users_helper.rb
+      invoke    rspec
+      create      spec/helpers/users_helper_spec.rb
+ruby@rorserver:~/rails_projects/sample_app$ rm -rf spec/views
+ruby@rorserver:~/rails_projects/sample_app$ rm -rf spec/helpers
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+............
+
+Finished in 0.27097 seconds
+12 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+............F
+
+Failures:
+
+  1) LayoutLinks should have a signup page at '/signup'
+     Failure/Error: response.should have_selector('title', :content => "Sign up")
+       expected following output to contain a <title>Sign up</title> tag:
+       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+       <html><body><p>Not Found</p></body></html>
+     # ./spec/requests/layout_links_spec.rb:27:in `block (2 levels) in <top (required)>'
+
+Finished in 0.28665 seconds
+13 examples, 1 failure
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+/usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:235:in `load': /usr/local/ruby/rails_projects/sample_app/config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end (SyntaxError)
+  match '/signup' :to => 'users#new'
+                   ^
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:235:in `block in load'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:227:in `load_dependency'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:235:in `load'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application.rb:127:in `block in reload_routes!'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application.rb:127:in `each'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application.rb:127:in `reload_routes!'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application.rb:120:in `block in routes_reloader'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/file_update_checker.rb:32:in `call'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.5/lib/active_support/file_update_checker.rb:32:in `execute_if_updated'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application/finisher.rb:51:in `block (2 levels) in <module:Finisher>'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application/finisher.rb:52:in `call'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application/finisher.rb:52:in `block in <module:Finisher>'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/initializable.rb:25:in `instance_exec'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/initializable.rb:25:in `run'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/initializable.rb:50:in `block in run_initializers'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/initializable.rb:49:in `each'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/initializable.rb:49:in `run_initializers'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application.rb:134:in `initialize!'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+	from /usr/local/ruby/rails_projects/sample_app/config/environment.rb:5:in `<top (required)>'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from /usr/local/ruby/rails_projects/sample_app/spec/spec_helper.rb:8:in `block in <top (required)>'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4/lib/spork.rb:23:in `prefork'
+	from /usr/local/ruby/rails_projects/sample_app/spec/spec_helper.rb:3:in `<top (required)>'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from /usr/local/ruby/rails_projects/sample_app/spec/controllers/pages_controller_spec.rb:1:in `<top (required)>'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `block in load_spec_files'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `map'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/configuration.rb:386:in `load_spec_files'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/command_line.rb:18:in `run'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:55:in `run_in_process'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:46:in `run'
+	from /usr/local/ruby/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.5.1/lib/rspec/core/runner.rb:10:in `block in autorun'
+ruby@rorserver:~/rails_projects/sample_app$ rspec spec/
+.............
+
+Finished in 0.30138 seconds
+13 examples, 0 failures
+ruby@rorserver:~/rails_projects/sample_app$ git add .
+ruby@rorserver:~/rails_projects/sample_app$ git commit -m 'done ch. 5'
+[master e3fa655] done ch. 5
+ 22 files changed, 740 insertions(+), 28 deletions(-)
+ create mode 100644 app/controllers/users_controller.rb
+ create mode 100644 app/controllers/users_controller.rb~
+ create mode 100644 app/helpers/users_helper.rb
+ create mode 100644 app/views/layouts/_footer.html.erb
+ create mode 100644 app/views/layouts/_footer.html.erb~
+ create mode 100644 app/views/layouts/_header.html.erb
+ create mode 100644 app/views/layouts/_header.html.erb~
+ create mode 100644 app/views/layouts/_stylesheets.html.erb
+ rewrite app/views/layouts/application.html.erb (74%)
+ create mode 100644 app/views/pages/help.html.erb
+ create mode 100644 app/views/users/new.html.erb
+ create mode 100644 chapter4.log
+ create mode 100644 public/images/logo.png
+ create mode 100644 public/stylesheets/custom.css
+ create mode 100644 public/stylesheets/custom.css~
+ create mode 100644 spec/controllers/users_controller_spec.rb
+ create mode 100644 spec/controllers/users_controller_spec.rb~
+ create mode 100644 spec/requests/layout_links_spec.rb
+ create mode 100644 spec/requests/layout_links_spec.rb~
+ruby@rorserver:~/rails_projects/sample_app$ git push
+ssh: Could not resolve hostname github.com: Name or service not known
+fatal: The remote end hung up unexpectedly
+ruby@rorserver:~/rails_projects/sample_app$ # ifconfig mert VM
+ruby@rorserver:~/rails_projects/sample_app$ git push
+Counting objects: 58, done.
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (41/41), 46.88 KiB, done.
+Total 41 (delta 10), reused 0 (delta 0)
+To git@github.com:horvand/sample_app.git
+   7a11ae2..e3fa655  master -> master
+ruby@rorserver:~/rails_projects/sample_app$ git push heroku
+Warning: Permanently added the RSA host key for IP address '50.16.215.196' to the list of known hosts.
+Counting objects: 58, done.
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (41/41), 46.89 KiB, done.
+Total 41 (delta 10), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+-----> Detected Rails is not set to serve static_assets
+       Installing rails3_serve_static_assets... done
+-----> Configure Rails 3 to disable x-sendfile
+       Installing rails3_disable_x_sendfile... done
+-----> Configure Rails to log to stdout
+       Installing rails_log_stdout... done
+-----> Gemfile detected, running Bundler version 1.0.7
+       All dependencies are satisfied
+       Compiled slug size is 3.9MB
+-----> Launching... done
+       http://simple-night-897.heroku.com deployed to Heroku
+
+To git@heroku.com:simple-night-897.git
+   7a11ae2..e3fa655  master -> master
+ruby@rorserver:~/rails_projects/sample_app$ 
